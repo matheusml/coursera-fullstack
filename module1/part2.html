@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <style>
+            fieldset {
+                background-color: lightyellow;
+                border: 10px solid yellow;
+                margin-bottom:10px;
+                width: 720px;
+            }
+            label {
+                width: 180px;
+                display: inline-block;
+                text-align: right;
+                text-align: top;
+            }
+            label .width-auto {
+                width: auto;
+            }
+            textarea {
+                width: 360px;
+                height: 50px;
+            }
+        </style>
+    </head>
     <body>
         <h1>Please enter your details for our dating website!</h1>
 
@@ -19,11 +41,11 @@
                 <input type="text" id="name" name="name" required>
                 <br>
                 <label>Gender:</label>
-                <label for="male">
+                <label for="male" class="width-auto">
                     <input id="male" name="male" type="radio"/>
                     male
                 </label>
-                <label for="female">
+                <label for="female" class="width-auto">
                     <input id="female" name="female" type="radio"/>
                     female
                 </label>
@@ -66,16 +88,16 @@
                 <label for="address">Address:</label>
                 <textarea id="address" name="address"></textarea>
                 <br>
-                <label>Methodo to contact you:</label>
-                <label for="whatsapp">
+                <label>Method to contact you:</label>
+                <label for="whatsapp" class="width-auto">
                     <input id="whatsapp" name="whatsapp" type="checkbox"/>
                     whatsapp
                 </label>
-                <label for="facebook">
+                <label for="facebook" class="width-auto">
                     <input id="facebook" name="facebook" type="checkbox"/>
                     facebook
                 </label>
-                <label for="twitter">
+                <label for="twitter" class="width-auto">
                     <input id="twitter" name="twitter" type="checkbox"/>
                     twitter
                 </label>
